@@ -7,3 +7,6 @@ gulp.task('js', function() {
         .pipe(gulp.dest('./build/js'));
 });
 
+gulp.task('js-wtch', function() {
+    gulp.watch('./src/js/*.js', ['js']);
+});
